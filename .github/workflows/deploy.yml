@@ -1,1 +1,46 @@
+name: Deploy PitWall Intelligence
 
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # ── Backend: Railway deploys automatically on push via GitHub integration ──
+  # No extra steps needed — Railway watches main branch directly.
+
+  # ── Frontend: Vercel deploys automatically on push via GitHub integration ──
+  # No extra steps needed — Vercel watches main branch directly.
+
+  # ── Run tests before any deployment goes live ──────────────────────────────
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        working-directory: backend
+        run: pytest ../tests/test_bvi_engine.py -v
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: frontend
+        env:
+          VITE_API_BASE_URL: https://pitwall-backend.railway.app
+        run: npm run build
