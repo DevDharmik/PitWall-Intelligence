@@ -1,4 +1,4 @@
-name: Deploy PitWall Intelligence
+name: CI — PitWall Intelligence
 
 on:
   push:
