@@ -1,0 +1,21 @@
+name,seasons,avg_points,avg_rank,total_wins,total_podiums,avg_dnf_rate
+Mercedes,11,619.05,1.55,116,0,0.1
+Red Bull,11,488.77,2.36,75,0,0.23
+Ferrari,11,427.77,2.82,27,0,0.2
+Force India,5,152.4,4.8,0,0,0.48
+McLaren,11,193.18,5.18,7,0,0.47
+Alpine F1 Team,4,128.25,5.25,1,0,0.45
+Racing Point,2,134.0,5.5,1,0,0.53
+Renault,5,91.8,5.8,0,0,0.66
+Aston Martin,4,126.5,6.0,0,0,0.41
+Lotus F1,2,44.0,7.0,0,0,0.72
+Toro Rosso,6,55.17,7.17,0,0,0.69
+Williams,11,80.18,7.27,0,0,0.62
+AlphaTauri,4,77.25,7.5,1,0,0.5
+Alfa Romeo,5,29.8,8.0,0,0,0.62
+RB F1 Team,1,46.0,8.0,0,0,0.6
+Haas F1 Team,9,34.11,8.33,0,0,0.68
+Marussia,1,2.0,9.0,0,0,0.94
+Sauber,6,15.83,9.33,0,0,0.83
+Manor Marussia,2,0.5,10.5,0,0,0.96
+Caterham,1,0.0,11.0,0,0,0.94
