@@ -1,0 +1,11 @@
+season,name,constructor_id,total_points,gbr_pred,gbr_residual
+2024,McLaren,mclaren,609.0,577.5,31.5
+2024,Ferrari,ferrari,595.0,485.5,109.5
+2024,Red Bull,red_bull,537.0,624.4,-87.4
+2024,Mercedes,mercedes,433.0,405.6,27.4
+2024,Aston Martin,aston_martin,94.0,134.7,-40.7
+2024,Alpine F1 Team,alpine,63.0,48.8,14.2
+2024,Haas F1 Team,haas,51.0,61.2,-10.2
+2024,RB F1 Team,rb,40.0,80.1,-40.1
+2024,Williams,williams,17.0,29.6,-12.6
+2024,Sauber,sauber,4.0,20.0,-16.0
